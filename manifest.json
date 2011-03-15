@@ -1,6 +1,6 @@
 {
   "name": "Grooveshark Lyrics",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Displays Lyrics for Now Playing songs of grooveshark",
   "background_page": "background.html",
   "icons": { "128": "icon.png" },
