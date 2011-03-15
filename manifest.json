@@ -1,0 +1,20 @@
+{
+  "name": "Grooveshark Lyrics",
+  "version": "1.0",
+  "description": "Displays Lyrics for Now Playing songs of grooveshark",
+  "background_page": "background.html",
+  "icons": { "128": "icon.png" },
+  "content_scripts": [
+    {
+      "matches": ["http://listen.grooveshark.com/*"],
+      "css": ["contentscript-theme.css"],
+      "js": ["jquery.js","contentscript.js"]
+
+    }
+  ],
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ]
+}
+
+

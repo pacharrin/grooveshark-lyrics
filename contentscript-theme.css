@@ -1,0 +1,12 @@
+#grooveshark_lyrics_nav {height: 32px; position: absolute; top: 4px; left: 200px; z-index: 1000;}
+#grooveshark_lyrics_nav li {float: left; display:inline;}
+#grooveshark_lyrics_nav li.last {margin: 0;}
+#grooveshark_lyrics_nav li a, #grooveshark_lyrics_nav li button {display: block; width: 32px; height: 32px; position:relative;}
+
+#header_nav_lyrics a {background-position: 0px 0px; margin: 0 6px 0 0;}
+#header_nav_lyrics a:hover {background-position: -32px 0px;}
+#header_nav_lyrics a:active {background-position: -64px 0px;}
+#header_nav_lyrics.selected a {background-position: -96px 0px;}
+#header_nav_lyrics.selected a:hover {background-position: -128px 0px;}
+#header_nav_lyrics.selected a:active {background-position: -160px 0px;}
+#gs_lyrics_content{width:80%;color:#666;margin-left:30px;margin-top:10px; margin-bottom:10px;height:100% }
