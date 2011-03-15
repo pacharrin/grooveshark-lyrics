@@ -1,6 +1,6 @@
 {
   "name": "Grooveshark Lyrics",
-  "version": "2.0",
+  "version": "2.1",
   "description": "Displays Lyrics for Now Playing songs of grooveshark",
   "background_page": "background.html",
   "icons": { "128": "icon.png" },
@@ -13,7 +13,7 @@
     }
   ],
   "permissions": [
-    "tabs", "http://*/*", "https://*/*"
+     "http://listen.grooveshark.com/*", "http://lyrics.wikia.com/*"
   ]
 }
 
