@@ -13,26 +13,16 @@ function getLyrics(){
    var nowPlayingDiv=document.getElementById('playerDetails_nowPlaying');
    var anchors= nowPlayingDiv.getElementsByTagName('a');
 
-   for (i=0;i<anchors.length;i++)
-   {
-      if(anchors[i].className=="song")
-      {
-         songName=anchors[i].title;
-         console.log(anchors[i].title);
-      }
+   songName   = $("#playerDetails_nowPlaying .song").text();
+   artistName = $("#playerDetails_nowPlaying .artist").text();
+   albumName  = $("#playerDetails_nowPlaying .album").text();
    
-      if(anchors[i].className=="artist")
-      {
-         artistName=anchors[i].title;
-         console.log(anchors[i].title);
-      }
-   
-      if(anchors[i].className=="album")
-      {
-         albumName=anchors[i].title;
-         console.log(anchors[i].title);
-      }   
-   }
+   $("#playerDetails_nowPlaying a .song").each(function (){
+      $(this).
+
+
+   });
+
    
    if(songName==null){
       alert("Please Play a Song ");
