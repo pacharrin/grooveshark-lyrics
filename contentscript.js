@@ -17,13 +17,6 @@ function getLyrics(){
    artistName = $("#playerDetails_nowPlaying .artist").text();
    albumName  = $("#playerDetails_nowPlaying .album").text();
    
-   $("#playerDetails_nowPlaying a .song").each(function (){
-      $(this).
-
-
-   });
-
-   
    if(songName==null){
       alert("Please Play a Song ");
       event.preventDefault();
