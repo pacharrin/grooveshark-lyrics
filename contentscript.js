@@ -1,12 +1,21 @@
+
 var songName;
 var artistName;
 var albumName;
-var bgImageURL = chrome.extension.getURL("images/grooveshark-lyrics.png");
-//add Image Button at the header
-$("#header").append("<ul id=\"grooveshark_lyrics_nav\"><li id=\"header_nav_lyrics\" class=\"lyrics\"><a href=\"/#/user\" style=\"background-image:url("+bgImageURL+");\" ></a></li></ul>");
-//reposition it
-$("#grooveshark_lyrics_nav").css("left",$("#nav").width()+parseInt($("#nav").css("left")));
-$("#grooveshark_lyrics_nav").click(getLyrics);
+
+$(document).ready(function (){
+   var left = $("#nav").width()+parseInt($("#nav").css("left"));
+   var uiStyle = "style=\"left: "+left+"px; position: absolute; top: 4px;\"";
+
+   var bgImageURL = chrome.extension.getURL("images/grooveshark-lyrics.png");
+   var aStyle = "style=\"background-image:url("+bgImageURL+");display: block; width: 32px; height: 32px; position: relative; \"";
+
+   //add Image Button at the header
+   $("#header").append("<ul id=\"grooveshark_lyrics_nav\" "+ uiStyle+"><li id=\"header_nav_lyrics\" class=\"lyrics\"><a href=\"/#/user\" " + aStyle + " ></a></li></ul>");
+   //reposition it
+   $("#grooveshark_lyrics_nav").css("left",$("#nav").width()+parseInt($("#nav").css("left")));
+   $("#grooveshark_lyrics_nav").click(getLyrics);
+});
 
 function getLyrics(){
 
